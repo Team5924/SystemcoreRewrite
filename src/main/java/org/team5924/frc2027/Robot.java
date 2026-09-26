@@ -9,8 +9,16 @@ import org.wpilib.epilogue.Epilogue;
 import org.wpilib.epilogue.Logged;
 import org.wpilib.framework.OpModeRobot;
 
+import org.littletonrobotics.junction.LogFileUtil;
+import org.littletonrobotics.junction.LoggedRobot;
+import org.littletonrobotics.junction.Logger;
+import org.littletonrobotics.junction.networktables.NT4Publisher;
+import org.littletonrobotics.junction.wpilog.WPILOGReader;
+import org.littletonrobotics.junction.wpilog.WPILOGWriter;
+
+
 @Logged
-public class Robot extends OpModeRobot {
+public class Robot extends OpModeRobot implements LoggedRobot{
   public Robot() {}
 
   @Override
